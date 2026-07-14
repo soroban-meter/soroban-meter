@@ -1,0 +1,13 @@
+[package]
+name = "soroban-meter-cli"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+clap = { version = "4.5.4", features = ["derive"] }
+reqwest = { version = "0.12.3", features = ["json"] }
+tokio = { version = "1.37.0", features = ["macros", "rt-multi-thread"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+comfy-table = "7.1.1"
+stellar-xdr = { version = "22.0.0", default-features = false, features = ["std", "base64", "curr"] }
